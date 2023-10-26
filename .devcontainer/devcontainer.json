@@ -1,0 +1,55 @@
+{
+	"name": "challenge_digitas",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+        "args": {
+            "PYTHON_VERSION": "3.10"
+        }		
+	},
+
+	// Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "pip install --user -r requirements.txt",
+	"postCreateCommand": "poetry install",
+
+	// Configure tool-specific properties.
+	"customizations": {
+        "vscode": {			
+            "extensions":[
+					"ms-python.python",
+					"njpwerner.autodocstring",
+					"eamodio.gitlens",
+					"oderwat.indent-rainbow",
+					"ms-python.isort",
+					"ms-toolsai.jupyter",
+					"ms-toolsai.vscode-jupyter-cell-tags",
+					"ms-toolsai.jupyter-keymap",
+					"ms-toolsai.jupyter-renderers",
+					"ms-toolsai.vscode-jupyter-slideshow",
+					"inferrinizzard.prettier-sql-vscode",
+					"ms-python.vscode-pylance",
+					"mechatroner.rainbow-csv",
+					"MS-CEINTL.vscode-language-pack-es",
+					"ms-vscode.sublime-keybindings",
+					"Gruntfuggly.todo-tree",
+					"vscode-icons-team.vscode-icons",
+					"yzhang.markdown-all-in-one",
+					"GitLab.gitlab-workflow",
+					"snowflake.snowflake-vsc",
+					"ms-python.pylint",
+					"ms-python.autopep8",
+					"amazonwebservices.aws-toolkit-vscode",
+					"mutantdino.resourcemonitor"
+				]
+            }
+        },
+		
+	// Set `remoteUser` to `root` to connect as root instead.
+	"remoteUser": "vscode"
+}

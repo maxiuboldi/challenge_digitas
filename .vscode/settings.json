@@ -1,0 +1,24 @@
+{
+    "workbench.startupEditor": "none",
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            {
+                "column": 79,
+                "color": "#ff0000"
+            },
+        ],
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "pylint.args": [
+        "--max-line-length=79"
+    ],
+    "autopep8.args": [
+        "--max-line-length=79"
+    ],
+    "python.defaultInterpreterPath": "/home/vscode/.cache/pypoetry/virtualenvs/challenge-digitas-xytyVKIi-py3.10/bin/python",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.defaultProfile.osx": "bash",
+    "terminal.integrated.cursorBlinking": true,
+    "python.analysis.typeCheckingMode": "off"
+}
